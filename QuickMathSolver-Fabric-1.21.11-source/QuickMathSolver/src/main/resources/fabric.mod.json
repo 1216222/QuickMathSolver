@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "id": "quick_math_solver",
+  "version": "${version}",
+  "name": "Quick Math Solver",
+  "description": "Detects Quick Math questions in chat and submits the arithmetic answer.",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.example.quickmath.QuickMathSolverClient"]
+  },
+  "mixins": ["quick_math_solver.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.18.0",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
